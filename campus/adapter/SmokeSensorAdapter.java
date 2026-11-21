@@ -2,7 +2,6 @@ package campus.adapter;
 
 import java.util.Objects;
 
-/** Object Adapter: CHỨA (composition) LegacySmokeDetector, không sao chép trạng thái. */
 public final class SmokeSensorAdapter implements ISensor {
     private final LegacySmokeDetector legacy;
 
@@ -12,7 +11,7 @@ public final class SmokeSensorAdapter implements ISensor {
 
     @Override
     public double readValue() {
-        return legacy.getSmokeLevel() / 10.0; // 0..1000 -> 0..100 %
+        return legacy.getSmokeLevel() / 10.0; 
     }
 
     @Override
