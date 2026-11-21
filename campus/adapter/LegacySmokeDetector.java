@@ -1,6 +1,6 @@
 package campus.adapter;
 
-/** Lớp có sẵn - giả định KHÔNG được sửa. */
+
 public final class LegacySmokeDetector {
     private int smokeLevel;
 
@@ -8,7 +8,7 @@ public final class LegacySmokeDetector {
         this.smokeLevel = smokeLevel;
     }
 
-    public int getSmokeLevel() { return smokeLevel; } // 0..1000
+    public int getSmokeLevel() { return smokeLevel; } 
 
     public String getDescription() { return "Legacy smoke detector"; }
 
